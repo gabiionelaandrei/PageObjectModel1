@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T10:05:32 EEST" name="Default suite" finished-at="2023-08-11T10:05:58 EEST" duration-ms="26380">
+  <suite started-at="2023-08-11T17:58:53 EEST" name="Default suite" finished-at="2023-08-11T17:59:23 EEST" duration-ms="29937">
     <groups>
     </groups>
-    <test started-at="2023-08-11T10:05:32 EEST" name="Default test" finished-at="2023-08-11T10:05:58 EEST" duration-ms="26380">
-      <class name="homeworkTests.BlogTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:homeworkTests.BlogTest@1cf6d1be]" started-at="2023-08-11T10:05:32 EEST" name="setup" finished-at="2023-08-11T10:05:49 EEST" duration-ms="16985" status="PASS">
+    <test started-at="2023-08-11T17:58:53 EEST" name="Default test" finished-at="2023-08-11T17:59:23 EEST" duration-ms="29937">
+      <class name="tests.ActionClassExample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:58:53 EEST" name="setup" finished-at="2023-08-11T17:59:13 EEST" duration-ms="19242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="postValidComment()[pri:0, instance:homeworkTests.BlogTest@1cf6d1be]" started-at="2023-08-11T10:05:49 EEST" name="postValidComment" description="Post a valid comment" finished-at="2023-08-11T10:05:53 EEST" duration-ms="4141" status="PASS">
+        <test-method signature="sendKeysExample()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:59:13 EEST" name="sendKeysExample" finished-at="2023-08-11T17:59:17 EEST" duration-ms="4536" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postValidComment -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:homeworkTests.BlogTest@1cf6d1be]" started-at="2023-08-11T10:05:53 EEST" name="teardown" finished-at="2023-08-11T10:05:58 EEST" duration-ms="5102" status="PASS">
+        </test-method> <!-- sendKeysExample -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:59:17 EEST" name="teardown" finished-at="2023-08-11T17:59:23 EEST" duration-ms="5930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- homeworkTests.BlogTest -->
+      </class> <!-- tests.ActionClassExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
