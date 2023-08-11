@@ -49,11 +49,15 @@ public class DropdownTest extends BaseTest {
 	public void example() throws InterruptedException {
 		MenuPage menu =  new MenuPage(driver);
 		menu.navigateTo(menu.shopLink);
+		//incarc in memorie un webelement pe sesiunea curenta de browser (session id)
 		WebElement dropdown =  driver.findElement(By.xpath("//select[@class='orderby']"));	
-		Select select =  new Select(dropdown);
-		select.selectByIndex(2);
+		Select select =  new Select(dropdown);//primeste web elementul si se foloseste de el
+		select.selectByIndex(2);//se folseste de webelement (dropdown pentru a selecta o optiune)
+		//in momentul in care face selectia din dropwdow, browserul (applicatia) face refresh
+		//in momentul in care face refresh --> selenium citeste alt session ID
 		Thread.sleep(3000);	
-		select.selectByValue("rating");
+		select.selectByValue("rating");//el identifica eletul pe un alt session id, decat cel curent
+		//si arunca StaleElementExecption
 		
 	}	
 	
