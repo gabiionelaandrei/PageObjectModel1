@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
-
+import org.openqa.selenium.support.ui.Select;
 public class XpathExample extends BaseTest {
 
 	@Test(priority = 1)
