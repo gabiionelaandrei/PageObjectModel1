@@ -1,4 +1,6 @@
 package tests;
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import pageObject.MenuPage;
@@ -16,22 +18,16 @@ public class ProductTest extends BaseTest {
 		menu.navigateTo(menu.shopLink);
 		ProductPage product = new ProductPage(driver);
 		
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
+
 		product.displayedElement(product.loop);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.loop);
 		product.displayedElement(product.title);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.title);
 		product.displayedElement(product.price);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.price);
 		product.displayedElement(product.description);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.description);
 		product.displayedElement(product.category);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.category);
 		product.displayedElement(product.tags);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.tags);
 		product.displayedElement(product.productID);
-		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", product.productID);
-		
+
+	
 
 }
 }

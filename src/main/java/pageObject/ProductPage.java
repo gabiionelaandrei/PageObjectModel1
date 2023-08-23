@@ -3,6 +3,7 @@ package pageObject;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 
@@ -26,6 +27,9 @@ public WebDriver driver;
 	
 	public void displayedElement (By locator) {
 		driver.findElement(banquetBook).click();
+		driver.findElement(locator);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:5px solid purple')", locator);
 		assertTrue(driver.findElement(locator).isDisplayed());
 	}
 }

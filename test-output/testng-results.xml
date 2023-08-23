@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-23T10:18:21 EEST" name="Default suite" finished-at="2023-08-23T10:18:45 EEST" duration-ms="23588">
+  <suite started-at="2023-08-23T10:30:53 EEST" name="Default suite" finished-at="2023-08-23T10:31:16 EEST" duration-ms="23119">
     <groups>
     </groups>
-    <test started-at="2023-08-23T10:18:21 EEST" name="Default test" finished-at="2023-08-23T10:18:45 EEST" duration-ms="23588">
+    <test started-at="2023-08-23T10:30:53 EEST" name="Default test" finished-at="2023-08-23T10:31:16 EEST" duration-ms="23119">
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:18:21 EEST" name="setup" finished-at="2023-08-23T10:18:36 EEST" duration-ms="15087" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:30:53 EEST" name="setup" finished-at="2023-08-23T10:31:08 EEST" duration-ms="15239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="isdisplayed()[pri:1, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:18:36 EEST" name="isdisplayed" description="Open a product page - check if the product elements are displayed" finished-at="2023-08-23T10:18:40 EEST" duration-ms="3127" status="FAIL">
+        <test-method signature="isdisplayed()[pri:1, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:31:08 EEST" name="isdisplayed" description="Open a product page - check if the product elements are displayed" finished-at="2023-08-23T10:31:11 EEST" duration-ms="2507" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Argument is of an illegal type: org.openqa.selenium.By$ByXPath]]>
@@ -27,7 +27,8 @@ at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.ja
 at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
 at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:461)
-at tests.ProductTest.isdisplayed(ProductTest.java:23)
+at pageObject.ProductPage.displayedElement(ProductPage.java:32)
+at tests.ProductTest.isdisplayed(ProductTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isdisplayed -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:18:40 EEST" name="teardown" finished-at="2023-08-23T10:18:45 EEST" duration-ms="5215" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ProductTest@75d3a5e0]" started-at="2023-08-23T10:31:11 EEST" name="teardown" finished-at="2023-08-23T10:31:16 EEST" duration-ms="5185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
