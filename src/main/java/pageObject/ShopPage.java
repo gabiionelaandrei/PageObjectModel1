@@ -17,6 +17,7 @@ public class ShopPage {
 	
 	
 	public By orderDropDown = By.xpath("//select[@class='orderby']");
+<<<<<<< HEAD
 	public By priceSliderInitalPosition = By.xpath("//span[@style='left: 0%;']");
 	public By priceSliderFinalPosition = By.xpath("//span[@style='left: 100%;']");
 
@@ -30,7 +31,18 @@ public class ShopPage {
 
 	}
 	
+=======
+	public By priceSliderInitialPosition = By.xpath("//span[@style='left: 0%;']");
+	public By priceSliderFinalPosition = By.xpath("//span[@style='left:100%;']");
+>>>>>>> 22919f1a53a61df9977c9b5f6f5d16c06c0dbf36
 	
+	public void dragAndDrop(By locator, int x, int y) {
+		WebElement element = driver.findElement(locator);
+		Actions action = new Actions(driver);
+		//action.dragAndDropBy(element, x, y).perform();
+        action.moveToElement(element).clickAndHold(element).moveByOffset(x,y).release().perform();
+		
+	}
 	
 	public void filterByValue(String value) {
 		WebElement element =  driver.findElement(orderDropDown);

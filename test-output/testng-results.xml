@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-08-23T07:40:10 EEST" name="Default suite" finished-at="2023-08-23T07:40:52 EEST" duration-ms="42200">
     <groups>
     </groups>
@@ -125,6 +126,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- homeworkTests.ShippingTest -->
+=======
+  <suite started-at="2023-08-11T17:58:53 EEST" name="Default suite" finished-at="2023-08-11T17:59:23 EEST" duration-ms="29937">
+    <groups>
+    </groups>
+    <test started-at="2023-08-11T17:58:53 EEST" name="Default test" finished-at="2023-08-11T17:59:23 EEST" duration-ms="29937">
+      <class name="tests.ActionClassExample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:58:53 EEST" name="setup" finished-at="2023-08-11T17:59:13 EEST" duration-ms="19242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sendKeysExample()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:59:13 EEST" name="sendKeysExample" finished-at="2023-08-11T17:59:17 EEST" duration-ms="4536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysExample -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ActionClassExample@4b013c76]" started-at="2023-08-11T17:59:17 EEST" name="teardown" finished-at="2023-08-11T17:59:23 EEST" duration-ms="5930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.ActionClassExample -->
+>>>>>>> 22919f1a53a61df9977c9b5f6f5d16c06c0dbf36
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
