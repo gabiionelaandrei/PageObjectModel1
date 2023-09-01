@@ -54,7 +54,7 @@ public class ShippingTest extends BaseTest{
 	public void selectByValueTest() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		ShippingPage shippingProvince = new ShippingPage(driver);
-		shippingProvince.filterByValue("Newfoundland and Labrador");
+		shippingProvince.filterByValue("NL");
 		assertEquals(shippingProvince.getCurrentSelectedOption(), "Newfoundland and Labrador");
 		ShippingMenu saveAdress = new ShippingMenu(driver);
 		saveAdress.navigateTo(saveAdress.saveShippingAddress);
