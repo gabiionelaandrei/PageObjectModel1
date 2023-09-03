@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="homeworkTests.ShippingTest">
+      <class name="tests.AudioPostTest">
         <methods>
-          <include name="selectByIndexTest"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="dragAndDropTest"/>
         </methods>
-      </class> <!-- homeworkTests.ShippingTest -->
+      </class> <!-- tests.AudioPostTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
