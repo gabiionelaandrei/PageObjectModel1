@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AudioPostTest">
+      <class name="tests.DataProviderMainPageTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="dragAndDropTest"/>
+          <include name="searchBooksTest" invocation-numbers="4"/>
         </methods>
-      </class> <!-- tests.AudioPostTest -->
+      </class> <!-- tests.DataProviderMainPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
