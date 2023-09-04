@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pageObject.SocialMediaPage;
 import utils.BaseTest;
