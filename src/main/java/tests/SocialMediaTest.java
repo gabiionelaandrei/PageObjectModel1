@@ -31,14 +31,15 @@ public class SocialMediaTest extends BaseTest {
 		assertTrue(driver.getCurrentUrl().equals("https://www.instagram.com/"));
 		Thread.sleep(3000);
 		driver.close();
-		//ne mutam pe pag KeyBooks
 		driver.switchTo().window(browserTabs.get(0));
-		System.out.println("Current window after tab close:" + driver.getWindowHandle());
-				
+		System.out.println("Current window after tab close:" + driver.getWindowHandle());		
 		
 		//deschidem pagina de twitter
-		
 		app.click(app.socialMedia.twitter);
+		System.out.println("Current window (KeyBooks):" + driver.getWindowHandle());
+		System.out.println("All windows (Instagram and KeyBooks) :" + driver.getWindowHandles());
+		browserTabs = new ArrayList<String>(driver.getWindowHandles());
+		
 		driver.switchTo().window(browserTabs.get(1));	
 		driver.findElement(By.xpath("//span[contains(text(), 'Accept all cookies')]")).click();
 		System.out.println("Current window after switch:" + driver.getWindowHandle());
@@ -51,6 +52,9 @@ public class SocialMediaTest extends BaseTest {
 		
 		//deschidem pagina de facebook
 		app.click(app.socialMedia.fb);
+		System.out.println("Current window (KeyBooks):" + driver.getWindowHandle());
+		System.out.println("All windows (Instagram and KeyBooks) :" + driver.getWindowHandles());
+		browserTabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(browserTabs.get(1));	
 		driver.findElement(By.xpath("//span[@class='x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen x1s688f xtk6v10']/span[contains(text(), 'Allow all cookies')]")).click();
 		driver.findElement(By.xpath("//div[@aria-label='Close']")).click();
