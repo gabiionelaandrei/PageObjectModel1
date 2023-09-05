@@ -5,14 +5,16 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 	
 	public static WebDriver driver;
 	public BasePage app;
 	
-	@BeforeClass(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		//System.setProperty("webdriver.chrome.driver", "path catre/chromedriver.exe")
 		driver = new ChromeDriver();
@@ -23,7 +25,7 @@ public class BaseTest {
 		app = new BasePage();
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void teardown() throws InterruptedException {
 		Thread.sleep(4000);//bad practice
 		
