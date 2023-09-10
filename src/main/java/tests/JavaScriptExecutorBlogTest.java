@@ -12,7 +12,6 @@ public class JavaScriptExecutorBlogTest extends BaseTest{
 	@Test
 	public void navigateToBlog() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		Actions action = new Actions(driver);
 		
 		String jsHover = "var obiect = document.createEvent('MouseEvent');"
 				+ "obiect.initMouseEvent('mouseover', true); arguments[0].dispatchEvent(obiect);";
@@ -39,8 +38,10 @@ public class JavaScriptExecutorBlogTest extends BaseTest{
 		jse.executeScript("arguments[0].value='"+ "gabi@test.ro" +"';", authorEmail);
 		
 		WebElement authorConsent = driver.findElement(By.cssSelector("input[id='wp-comment-cookies-consent']"));
-		if(!authorConsent.isSelected())
+		String isDisplayedRecommend = jse.executeScript("return document.getElementById('wp-comment-cookies-consent').checked").toString();
+		if(isDisplayedRecommend.equals("true")) {	
 		jse.executeScript("arguments[0].click()", authorConsent);
+		}
 		
 		WebElement postComment = driver.findElement(By.cssSelector("input[name='submit']"));
 		jse.executeScript("arguments[0].click()", postComment);

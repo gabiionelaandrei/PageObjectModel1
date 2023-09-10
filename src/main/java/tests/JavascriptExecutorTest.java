@@ -53,22 +53,22 @@ public class JavascriptExecutorTest extends BaseTest{
 				);
 	*/	
 		
-		jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
-		jse.executeScript("document.getElementsByClassName('search_field')[0].value='cooking'");
-		jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
-
-		
-		System.out.println(driver.getTitle());
-		//alternativa pentru getTitle
-		System.out.println("Title :" + jse.executeScript("return document.title"));
-		Thread.sleep(3000);
-		//alternativa pentru getCurrentURL
-		System.out.println("URL :" + jse.executeScript("return document.URL"));
-		//alternativa pentru element.getText()
-		String bookTitle = jse.executeScript
-				("return document.getElementsByClassName('post_title')[0].childNodes[0].innerText").toString();
-		System.out.println("Element text :" + bookTitle);
-		
+//		jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
+//		jse.executeScript("document.getElementsByClassName('search_field')[0].value='cooking'");
+//		jse.executeScript("document.getElementsByClassName('icon-search')[0].click()");
+//
+//		
+//		System.out.println(driver.getTitle());
+//		//alternativa pentru getTitle
+//		System.out.println("Title :" + jse.executeScript("return document.title"));
+//		Thread.sleep(3000);
+//		//alternativa pentru getCurrentURL
+//		System.out.println("URL :" + jse.executeScript("return document.URL"));
+//		//alternativa pentru element.getText()
+//		String bookTitle = jse.executeScript
+//				("return document.getElementsByClassName('post_title')[0].childNodes[0].innerText").toString();
+//		System.out.println("Element text :" + bookTitle);
+//		
 		
 		jse.executeScript("document.getElementsByClassName('menu_user_login')[0].childNodes[0].click() ");
 		
